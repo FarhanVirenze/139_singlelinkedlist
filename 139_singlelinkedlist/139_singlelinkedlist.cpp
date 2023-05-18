@@ -93,9 +93,24 @@ bool listEmpty() {
 }
 
 void traverse() {
-
+	if (listEmpty()) {
+		cout << "List Kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	else {
+		Node* currentNode = START;
+		while (currentNode != NULL) {
+			cout << "NIM: " << currentNode->noMhs << ", Nama: " << currentNode->name << endl;
+			currentNode = currentNode->next;
+		}
+	}
 }
 
+void searchData() {
+
+}
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
