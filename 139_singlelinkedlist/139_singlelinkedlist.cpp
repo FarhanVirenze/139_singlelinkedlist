@@ -27,6 +27,7 @@ void addNode() {
 		if (START != NULL && nim == START->noMhs)
 		{
 			cout << "NIM sudah ada" << endl;
+			return;
 		}
 
 		nodeBaru->next = START;
@@ -88,7 +89,7 @@ bool listEmpty() {
 	if (START = NULL)
 		return true;
 	else
-		return false;
+		return false; 
 
 }
 
