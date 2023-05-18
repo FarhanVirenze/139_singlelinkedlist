@@ -132,7 +132,8 @@ void searchData() {
 }
 
 int main() {
-
+	int pilihan;
+	do
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
