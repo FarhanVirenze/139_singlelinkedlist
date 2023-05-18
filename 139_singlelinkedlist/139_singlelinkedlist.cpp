@@ -188,10 +188,12 @@ int main() {
 		}
 		catch (exception e)
 		{
-
+			cout << "Terjadi Kesalahan" << endl;
 		}
-	}
+
+	} while (pilihan != 5);
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
