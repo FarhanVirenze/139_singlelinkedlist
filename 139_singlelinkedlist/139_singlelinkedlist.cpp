@@ -81,12 +81,12 @@ bool deleteNode(int nim) {
 	if (serachNode(nim, previous, current) == false)
 		return false;
 	previous->next = current->next;
-	if (current = START)
+	if (current == START)
 		START = current->next;
 	return true;
 }
 bool listEmpty() {
-	if (START = NULL)
+	if (START == NULL)
 		return true;
 	else
 		return false; 
@@ -123,7 +123,7 @@ void searchData() {
 		Node* currentNode = START;
 		while (currentNode != NULL) {
 			if (currentNode->noMhs == nim) {
-				cout << "NIM: " << currentNode->noMhs << ", Nama " << currentNode->name << endl;
+				cout << "NIM: " << currentNode->noMhs << ", Nama: " << currentNode->name << endl;
 				return;
 			}
 			currentNode = currentNode->next;
@@ -201,7 +201,7 @@ int main() {
 
 // Tips for Getting Started: 
 //   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
+//   2. Use the Team Explorer window to connect to source control 
 //   3. Use the Output window to see build output and other messages
 //   4. Use the Error List window to view errors
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
